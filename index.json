@@ -208,12 +208,16 @@
     {
       "id": "selective-8bit",
       "available": false,
-      "reason": "Not qualified; evaluation tracked in Swift issue #37."
+      "reason": "Rejected frozen hidden/cache state gates.",
+      "evidence_url": "https://github.com/ThalesMMS/NV-Reason-CT-Swift/blob/a33fd1e34a9d1d068cc0eaa05d351c848b22eb4d/validation/quantized-mlp-8-evaluation-v1.json",
+      "evidence_sha256": "868da31296fd5b250d9c1ff4a952d3b8fd4983bc383525d42e62983a237ab9e9"
     },
     {
       "id": "selective-4bit",
       "available": false,
-      "reason": "Not qualified; evaluation tracked in Swift issue #37."
+      "reason": "Rejected frozen hidden/cache/logit KL gates and changed free report text.",
+      "evidence_url": "https://github.com/ThalesMMS/NV-Reason-CT-Swift/blob/a33fd1e34a9d1d068cc0eaa05d351c848b22eb4d/validation/quantized-mlp-4-evaluation-v1.json",
+      "evidence_sha256": "2e4dcc0910fcdfce32618c8568bc2d38afcad68a8c21bf9e0e19fc938d853543"
     }
   ]
 }
