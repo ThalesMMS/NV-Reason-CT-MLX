@@ -1,0 +1,71 @@
+{
+  "scope": "bounded-native-input-and-acquisition-security-review",
+  "status": "pass",
+  "code_revision": "79a6906d87ac92e61984f864772b057452790e6c",
+  "bundle_id": "f161b426996994d6a1c224976afe7b89866c678eb36da7fd96730f48d3bb6eac",
+  "executable_sha256": "d5a75386fe7cf32bb25db7dcc292a90f4475a641d5c4c8ec57871d66dab86a39",
+  "threat_model": "docs/SECURITY.md",
+  "required_checks_missing": [],
+  "open_relevant_native_findings": [],
+  "checks": {
+    "core_tests": 26,
+    "store_parser_transport_tests_with_real_bundle": 23,
+    "skipped": 0,
+    "NIfTI_gzip_mutations": {
+      "seed": "91ad273b0c51e677",
+      "cases": 768,
+      "accepted_with_bounded_finite_volume": 325,
+      "refused_with_typed_error": 443,
+      "maximum_input_and_expanded_bytes": 4096,
+      "fixed_gzip_workspace_bytes": 1048576,
+      "asserted_wall_limit_seconds": 5
+    },
+    "post_inspection_tampering": "real 805-tensor CoW clone mutated; verified weight read/new acquisition refused; original unchanged; lease still blocked removal",
+    "real_bundle_faults": 9,
+    "bundle_positive_control_tensors": 805,
+    "controlled_URLSession_loopback": true,
+    "normal_reference_preprocessing_unchanged": [
+      {
+        "case_id": "public-01",
+        "region": "chest",
+        "HU_exact": true,
+        "normalized_exact": true,
+        "provenance_exact": true,
+        "normalized_sha256": "b82a71473efdda88ef5025320a80221e34b88511be705c52aa32f8bad15e10af"
+      },
+      {
+        "case_id": "public-01",
+        "region": "abdomen",
+        "HU_exact": true,
+        "normalized_exact": true,
+        "provenance_exact": true,
+        "normalized_sha256": "8d14a81dfc966895f39fc9ecf914c2207af9c90cb3e5e9fd328456e18be5cc5e"
+      }
+    ],
+    "sliced_Data_regression": "Nonzero startIndex decoded relative to actual collection origin without an extra copy",
+    "large_in_memory_axis_regression": "Integer clamp prevents Float32 endpoint rounding past actual last voxel above 2^24"
+  },
+  "receipt_sha256": {
+    "security-bundle-faults-fp32-v1.json": "e523f27f828916239e3cda7e54a9d0fe67a466c9d21b0d018c0236e1e69e8d13",
+    "security-bundle-alias-fp32-v1.json": "cb8174d2dc054453549536862dbc93a41ca0ec0c1b76e7fc107424db08902449",
+    "model-store-integrity-lifetime-v1.json": "d4424757b0f79edabecc8d139137142a0f292c1c4aad2146588d523b8f6e2fb0",
+    "model-store-real-offline-v1.json": "db429313bf23af7dcbd9a280b0e4a83cf420c0c11b71bf31e61a0ea727534b1a",
+    "reference-security-guard-calibration-v2.json": "bcdc1e7ed99d8c185d253035f19a699e07b160fc38a9511d14f423162e7bec40"
+  },
+  "offline_reference_dependencies": {
+    "upstream_alerts_still_open": 3,
+    "shipped_in_native_runtime": false,
+    "mitigation": "complete pinned source verification, network denial, disabled unused custom-generation/save/sharded APIs",
+    "guarded_reference_arrays_bit_exact": 39,
+    "package_versions_upgraded": false,
+    "official_loader_optional_probe_compatible": true
+  },
+  "command": "NV_REASON_TEST_BUNDLE=PRIVATE swift test --filter NVReasonCTCoreTests|NVReasonCTModelStoreTests; real positive bundle; tools/test_native_bundle_faults.py; prepare-volume exact-byte regression; tools/summarize_security.py",
+  "limitations": [
+    "Bounded deterministic engineering review, not complete fuzzing/audit/certification",
+    "Chosen store root and ancestors belong to trusted host; compromised same-user account/app binaries outside boundary",
+    "Physical RAM admission and viewer residency remain independent #38/#46 gates",
+    "Legacy Python advisories are mitigated in offline tools, not declared fixed or dismissed",
+    "No clinical/mobile qualification; release approval/publication independently gated"
+  ]
+}

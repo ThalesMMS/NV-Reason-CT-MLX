@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "contract_id": "nv-reason-ct-validation-v1",
+  "role": "native-candidate",
+  "scope": "end-to-end",
+  "status": "pass",
+  "source_revision": "386b93e034983f6c1fc841a43833a1b6a0cd9c13",
+  "code_revision": "2a479156d3a2f125683a3fb02ba118b7f7aeb40f",
+  "case_id": "public-01-initial-fp32",
+  "precision": "final NVIDIA BF16 values stored unchanged, FP32 computation/activations/caches; no recovered precision",
+  "backend": "Swift/MLX Apple GPU vs calibrated official PyTorch MPS",
+  "command": "tools/run_fp32_reference_corpus.py; tools/run_fp32_native_corpus.py --deny-network; Release CLI validate-stream; tools/summarize_native_fp32.py",
+  "hardware": {
+    "chip": "Apple M4 Pro",
+    "memory_bytes": 25769803776,
+    "os": "macOS 27.0.1 26A434",
+    "simulator": false
+  },
+  "evidence": {
+    "real_weights": true,
+    "real_volume": true,
+    "gpu_exercised": true,
+    "mocked": false,
+    "skipped": false,
+    "simulator": false
+  },
+  "metrics": {
+    "gates_executed": true,
+    "failed_gates": [],
+    "required_gates_missing": [],
+    "profile_id": "nv-reason-ct-bf16-storage-fp32-compute-v1",
+    "profile_sha256": "b33ea7fa585405f78129ee99ae4b8d28ddef3d5b472846853de1a46ac7bc71d3",
+    "bundle_id": "e1ba37c24150cc7b3ade9d5b61097a25fb00bcdf679c193a2478348bd427f5d7",
+    "teacher_forced_positions": 968,
+    "tasks": 8,
+    "top1_agreement": 1.0,
+    "all_report_QA_predictions_and_UTF8_exact": true,
+    "report_change_review": "No generated token/text differences, therefore no implementation-introduced finding/negation/laterality/omission changes in these cases; medical correctness not assessed",
+    "greedy_Release_reports_exact": 2,
+    "visual_tokens": 13824,
+    "prefill_partitions": [
+      "128-token diagnostic: 1,17,monolithic",
+      "nominal: 512,monolithic"
+    ],
+    "truncation_resume": "8 to 16 inside admitted reservation; all distributions/predictions match",
+    "fault_controls": {
+      "weights": "nine real-bundle tampering faults refused before materialization",
+      "positions": "zero and same-shape axis reorder fail frozen positional numeric gates",
+      "tokens": "reserved image/role controls and malformed roles refused; actual native IDs/positions bound to reference hashes before float scoring"
+    },
+    "receipt_sha256": {
+      "preprocessing-qualification-v1.json": "84264b4e30bd240a6c2fe82b511dc12e95b3b73b26407342594219783e61d7db",
+      "prompt-position-v1.json": "e958aa4ec93179b241135f1bec5d338c3289463d6a6e7eac72401ffab908d6d3",
+      "fp32-reference-calibration-v1.json": "f7d2bf59f1187e1c85df80a58e52857fa6413d97ae8a3578b4c4e99916bd7300",
+      "fp32-reference-transient-calibration-v1.json": "2e0a1d438bff27e677a3fdcc2fff43895e2ae8997fe0f2308f8c6c98f2b8231c",
+      "fp32-vision-reference-calibration-v1.json": "be9ffdbd91256fb879ce3a2cdef72c6ea42694272036b7f84bf5be00ddfa13b1",
+      "vision-public01-chest-fp32-v1.json": "36e4b58f5522329d45d9f23abf639cba62cbd821490a51628f0b9cf628164b52",
+      "vision-public01-abdomen-fp32-release-v1.json": "a303996826118c57782a908c083e758b4b0806c583caca8d78befbfbfdb2f331",
+      "native-fp32-corpus-v1.json": "317639c9b597904322b6faea7c7f072734a0318c474cee55437702b03ec4ec1e",
+      "language-nominal-chest-fp32-v1.json": "2b7bd1bf02c89b59e26d981c8c043d60b8699ac1eb4262f0f190e8a65e6808f3",
+      "language-nominal-chest-fp32-chunk512-v1.json": "7c6e401843bb417eba936aacd9d5798726f73030c02217b518d2847b3ad10590",
+      "language-prefix128-fp32-chunk1-v1.json": "76864401a359796e8f41b3f351ac46b013675135c37bae236bff8a8270e5d9af",
+      "language-prefix128-fp32-chunk17-v1.json": "e7af68d0e60e529d224717954ce6fa7580a71180051a9cdec3b7fd5c7203dcee",
+      "continuation-real-fp32-v1.json": "48483a06e3931f2e2289c84ccafc1610517fd2aaf10dfc94faf6ae372d76e8aa",
+      "release-greedy-reports-fp32-v1.json": "d48d2b9b15e5659db68d9e8e4bce46157698bacdbf72f2db5b38daf80c30e248",
+      "runtime-real-cancellation-v1.json": "032cb84feef1c9ca3fa03763d5a4716342b904622d2e652e412e7452321a9c36",
+      "native-bundle-faults-v1.json": "c2f4317cc0d9b48fbbe56cf2cafb88214b320d4eca88e1d621478d7ecf15a076"
+    },
+    "historical_BF16_compute_rejections": {
+      "language-nominal-chest-oracle-v2.json": "c1b1d698eaec1e9e017dded7c13f096a328ff1e4a0d2621bafd4db31eed87566",
+      "language-nominal-chest-chunk64-v1.json": "1c3bd4c37d04719daaa0fa38e0e8d36f0612f8c1bb6eb0cf153f3b7e8695b30b"
+    }
+  },
+  "limitations": [
+    "Bounded engineering qualification: public-01, chest/abdomen and the frozen presets on one physical M4 Pro",
+    "Provided-history fresh forward is compared; reusable multi-turn cache qualification remains separate",
+    "BF16 compute is rejected. FP16, 8/4-bit variants, CUDA and physical mobile devices remain unqualified",
+    "No independent-patient/clinical accuracy, certification, viewer residency or complete process benchmark claim",
+    "Recorded code/binary revisions are per receipt; later changes require scoped requalification before promotion",
+    "Integrity/comparison does not by itself grant authenticated model-distribution approval"
+  ]
+}

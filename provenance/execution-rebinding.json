@@ -1,0 +1,21 @@
+{
+  "scope": "explicit-fp32-execution-rebinding",
+  "status": "integrity-verified",
+  "original_bundle_id": "e1ba37c24150cc7b3ade9d5b61097a25fb00bcdf679c193a2478348bd427f5d7",
+  "bundle_id": "f161b426996994d6a1c224976afe7b89866c678eb36da7fd96730f48d3bb6eac",
+  "manifest_sha256": "546d892cbe9912fdf556ede5051dd15d246e42981fa6d66ce03c7fbf495de842",
+  "all_declared_non_manifest_files_byte_identical": true,
+  "declared_files": 24,
+  "precision": {
+    "weights": "BF16",
+    "activations": "FP32",
+    "norm_and_recurrence": "FP32",
+    "profile": "bf16-storage-fp32-compute-v1"
+  },
+  "release_approved": false,
+  "tool_sha256": "c7716f3e00e6bea03a1810593fadd5990fc3dc535921dbb3c7b28ac228a6f184",
+  "limitations": [
+    "Identity/byte comparison only; numeric and security release gates remain independent",
+    "BF16 expansion does not recover precision; no weight conversion or numerical forward performed"
+  ]
+}

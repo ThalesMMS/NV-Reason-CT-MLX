@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "nv-reason-ct-fp32-v1",
+      "bundle_id": "f161b426996994d6a1c224976afe7b89866c678eb36da7fd96730f48d3bb6eac",
+      "manifest_sha256": "546d892cbe9912fdf556ede5051dd15d246e42981fa6d66ce03c7fbf495de842",
+      "profile_id": "nv-reason-ct-bf16-storage-fp32-compute-v1",
+      "available": false,
+      "engineering_qualified": true,
+      "clinical_validation": false,
+      "publication": "draft-pending-download-verification",
+      "tag": "ct-fp32-v0.1.0",
+      "plan_sha256": "616937e3cd2f7c283025c8937c676e84f21af7f37d60231bf79b4c19199dee40",
+      "minimum_runtime": "0.1.0",
+      "precision": {
+        "activations": "FP32",
+        "norm_and_recurrence": "FP32",
+        "profile": "bf16-storage-fp32-compute-v1",
+        "weights": "BF16"
+      },
+      "source_revision": "386b93e034983f6c1fc841a43833a1b6a0cd9c13",
+      "files": [
+        {
+          "path": "NOTICES.txt",
+          "asset": "NOTICES.txt",
+          "bytes": 1329,
+          "sha256": "6ac4887a44d23fb14dace773797fb9ecf4a30b9184b864cc6034d6f49d38fff7",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/NOTICES.txt"
+        },
+        {
+          "path": "chat_template.jinja",
+          "asset": "chat_template.jinja",
+          "bytes": 7756,
+          "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/chat_template.jinja"
+        },
+        {
+          "path": "config.json",
+          "asset": "config.json",
+          "bytes": 3106,
+          "sha256": "c03e6071e42cc9f243c3f9bf66c5af9f749ee66c1ff9aa11fa6b5ed33045fe2d",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/config.json"
+        },
+        {
+          "path": "conversion.json",
+          "asset": "conversion.json",
+          "bytes": 284802,
+          "sha256": "fd56e1c3b3197c6783e07e15ae0f582c487113f41ea6f9fa9671cb33429c85f1",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/conversion.json"
+        },
+        {
+          "path": "generation_config.json",
+          "asset": "generation_config.json",
+          "bytes": 163,
+          "sha256": "6a391fdcafb170d69b8c5f7f2b131f8210c2fd7f6fa241862f664166bdc32d92",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/generation_config.json"
+        },
+        {
+          "path": "image_processor_3d/preprocessor_config.json",
+          "asset": "image_processor_3d-preprocessor_config.json",
+          "bytes": 238,
+          "sha256": "1f5b118fa7b05e49a37e9fcb49ffbd26b5762fa357cc0c2ca4b3e1cb061830b2",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/image_processor_3d-preprocessor_config.json"
+        },
+        {
+          "path": "licenses/Apache-2.0.txt",
+          "asset": "licenses-Apache-2.0.txt",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/licenses-Apache-2.0.txt"
+        },
+        {
+          "path": "licenses/NVIDIA-OpenMDW-1.1.txt",
+          "asset": "licenses-NVIDIA-OpenMDW-1.1.txt",
+          "bytes": 2693,
+          "sha256": "d7c8a9e5d1896d0a9588319cc7b1433e64645ad6d9e55632c30b78d8c038c23b",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/licenses-NVIDIA-OpenMDW-1.1.txt"
+        },
+        {
+          "path": "licenses/mlx-swift-MIT.txt",
+          "asset": "licenses-mlx-swift-MIT.txt",
+          "bytes": 1067,
+          "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/licenses-mlx-swift-MIT.txt"
+        },
+        {
+          "path": "licenses/mlx-swift-lm-MIT.txt",
+          "asset": "licenses-mlx-swift-lm-MIT.txt",
+          "bytes": 1067,
+          "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/licenses-mlx-swift-lm-MIT.txt"
+        },
+        {
+          "path": "manifest.json",
+          "asset": "manifest.json",
+          "bytes": 4682,
+          "sha256": "546d892cbe9912fdf556ede5051dd15d246e42981fa6d66ce03c7fbf495de842",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/manifest.json"
+        },
+        {
+          "path": "processing.json",
+          "asset": "processing.json",
+          "bytes": 649,
+          "sha256": "cf696e6f04b885526ca6e87c88a0cd2901da7a5e86d77b56e953d2701f19eaaf",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/processing.json"
+        },
+        {
+          "path": "source-map.json",
+          "asset": "source-map.json",
+          "bytes": 316612,
+          "sha256": "4547c52c7d41a9f00f10c43ce90388e39ed08de414491bb0c0bdf57f9c8e6edc",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/source-map.json"
+        },
+        {
+          "path": "tensor-index.json",
+          "asset": "tensor-index.json",
+          "bytes": 222715,
+          "sha256": "e9dcc948bedbb20c40e52cb20116126b4afd8186a69a056bfb02a7d8db967b3b",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/tensor-index.json"
+        },
+        {
+          "path": "tokenizer.json",
+          "asset": "tokenizer.json",
+          "bytes": 19989325,
+          "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/tokenizer.json"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "asset": "tokenizer_config.json",
+          "bytes": 1339,
+          "sha256": "43ad4763287aaba4486a9f0fc787ab8eacbf2bfc812084520a19a28c242b1349",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/tokenizer_config.json"
+        },
+        {
+          "path": "weights/language-00001.safetensors",
+          "asset": "weights-language-00001.safetensors",
+          "bytes": 1271398584,
+          "sha256": "9a8529811ec44ec489aa3bfa7fed3da1a3bfc666b8b8b2fdaf8ffd6223e7af5a",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00001.safetensors"
+        },
+        {
+          "path": "weights/language-00002.safetensors",
+          "asset": "weights-language-00002.safetensors",
+          "bytes": 1071177416,
+          "sha256": "80031bc3a0cba3e59c1318ba77231d0bbe55b83004485c01b376d63eee4673bd",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00002.safetensors"
+        },
+        {
+          "path": "weights/language-00003.safetensors",
+          "asset": "weights-language-00003.safetensors",
+          "bytes": 1071182736,
+          "sha256": "de3917eb73a85d83b05563ccbb8ab9276bea82b560a3085bae7a132eda6a69ba",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00003.safetensors"
+        },
+        {
+          "path": "weights/language-00004.safetensors",
+          "asset": "weights-language-00004.safetensors",
+          "bytes": 1071182720,
+          "sha256": "a99773d8d24a82a62a12d64b70fb5bac34a331415c141384aaeae767c5d84937",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00004.safetensors"
+        },
+        {
+          "path": "weights/language-00005.safetensors",
+          "asset": "weights-language-00005.safetensors",
+          "bytes": 1034481936,
+          "sha256": "af3e88759fbccc534ce996f5e7961435d50a7f512fd4212a800c1dc471d94856",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00005.safetensors"
+        },
+        {
+          "path": "weights/language-00006.safetensors",
+          "asset": "weights-language-00006.safetensors",
+          "bytes": 1059904648,
+          "sha256": "bb3ee9f4417602ca9f3a5f8d435655ca47526a9c85bf1aeab9ff3b8a40879e26",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00006.safetensors"
+        },
+        {
+          "path": "weights/language-00007.safetensors",
+          "asset": "weights-language-00007.safetensors",
+          "bytes": 1071177576,
+          "sha256": "9e6d834b8f69e6736efa69a691b53f29d4cf5e353569d32fe9e47118f8ac1209",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00007.safetensors"
+        },
+        {
+          "path": "weights/language-00008.safetensors",
+          "asset": "weights-language-00008.safetensors",
+          "bytes": 761052328,
+          "sha256": "489bb6586071c89cb0b9aad28b746735a0ba9e836c386342018706f97f37f862",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-language-00008.safetensors"
+        },
+        {
+          "path": "weights/vision3d-00001.safetensors",
+          "asset": "weights-vision3d-00001.safetensors",
+          "bytes": 294144776,
+          "sha256": "d201d8d3020f1692ce633a2bafe47c1f0a31d56a87aab18cdce5cbd7130c8f83",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-fp32-v0.1.0/weights-vision3d-00001.safetensors"
+        }
+      ]
+    }
+  ],
+  "unavailable_variants": [
+    {
+      "id": "bf16-compute",
+      "available": false,
+      "reason": "Failed frozen intermediate-state equivalence gates; BF16 storage is preserved only under the qualified FP32 compute profile."
+    },
+    {
+      "id": "selective-8bit",
+      "available": false,
+      "reason": "Not qualified; evaluation tracked in Swift issue #37."
+    },
+    {
+      "id": "selective-4bit",
+      "available": false,
+      "reason": "Not qualified; evaluation tracked in Swift issue #37."
+    }
+  ]
+}

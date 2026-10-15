@@ -1,0 +1,66 @@
+{
+  "scope": "real-host-resource-admission-and-equivalent-prefill",
+  "status": "pass",
+  "code_revision": "126254c2fa8f7b2abe75e6c9374efaaac49a3b08",
+  "executable_sha256": "f170f5fd590fe05ba18f748cad3f4b9e16179e109818bf9927390677228b6cf0",
+  "bundle_id": "f161b426996994d6a1c224976afe7b89866c678eb36da7fd96730f48d3bb6eac",
+  "profile_id": "nv-reason-ct-bf16-storage-fp32-compute-v1",
+  "case_id": "public-01",
+  "region": "chest",
+  "task": "qa",
+  "refusals": [
+    {
+      "id": "18gib",
+      "exit_code": 2,
+      "refused_before_loading": true,
+      "output_absent": true
+    },
+    {
+      "id": "other-resident",
+      "exit_code": 2,
+      "refused_before_loading": true,
+      "output_absent": true
+    },
+    {
+      "id": "large-chunk-without-opt-in",
+      "exit_code": 2,
+      "refused_before_loading": true,
+      "output_absent": true
+    },
+    {
+      "id": "no-system-reserve",
+      "exit_code": 2,
+      "refused_before_loading": true,
+      "output_absent": true
+    }
+  ],
+  "plan": {
+    "effectiveProcessBudgetBytes": 21474836480,
+    "equivalentChunkReduction": true,
+    "estimatedProcessPeakBytes": 20937719808,
+    "otherResidentBytes": 0,
+    "prefillChunkSize": 512,
+    "requestedPrefillChunkSize": 13855,
+    "systemReserveBytes": 4294967296
+  },
+  "kernel_lifetime_peak_process_bytes": 20114547424,
+  "requested_prefill_chunk": 13855,
+  "effective_prefill_chunk": 512,
+  "visual_tokens": 13824,
+  "source_response_exact": true,
+  "termination": "eos",
+  "teacher_forcing": false,
+  "active_MLX_bytes_after_unload": 0,
+  "network_denied_per_process": true,
+  "source_report_sha256": "376949763d6d2a060f40445e5abe93b543f690d26ba0586475386fe3db2a55b2",
+  "native_report_sha256": "ed80626f9281c3cc1448b40dddea3e65f044d016deafd8a7624344ac411422a8",
+  "hardware": "physical M4 Pro 24 GiB, macOS 27.0.1; Release Swift/MLX GPU",
+  "command": "tools/validate_resource_admission.py; Release validate-stream with host budget and explicit equivalent chunk opt-in under deny network",
+  "limitations": [
+    "Measured engineering planning floor, not an OS memory cap or general RAM-tier requirement",
+    "Fresh QA only; 512/monolithic state/logit equivalence and complete baseline are independently recorded",
+    "Other-model reservation is an explicit host input; actual viewer/TotalSegmentator residency requires integrated physical measurement",
+    "No global MLX limit/cache change, no crop/token/precision reduction or remote fallback",
+    "No clinical/mobile qualification"
+  ]
+}

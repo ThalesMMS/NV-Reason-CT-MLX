@@ -1,0 +1,43 @@
+{
+  "scope": "real-resource-pressure-and-model-residency-handoff",
+  "status": "pass",
+  "code_revision": "83df033be22824123d37c051a9d8edce893bd5c8",
+  "bundle_id": "f161b426996994d6a1c224976afe7b89866c678eb36da7fd96730f48d3bb6eac",
+  "executable_sha256": "01d76d8d03c8e085cca393b2916fea896f3ca9958df738afa3d36fda216a45bb",
+  "profile_id": "nv-reason-ct-bf16-storage-fp32-compute-v1",
+  "case_id": "public-01",
+  "region": "chest",
+  "task": "qa",
+  "checks": {
+    "active_bytes_after_three_unloads": [
+      0,
+      0,
+      0
+    ],
+    "global_cache_or_limit_changed": false,
+    "host_GPU_arithmetic_exact": true,
+    "other_neural_model_exercised": false,
+    "partial_predictions_before_pressure": 1,
+    "partial_termination": "cancelled",
+    "peer_factory_refused_while_host_owned": true,
+    "pressure_to_released_seconds": 0.005140500026755035,
+    "process_memory": {
+      "compressedBytes": 9619095552,
+      "lifetimePeakPhysicalFootprintBytes": 20619798320,
+      "physicalFootprintBytes": 18950906712,
+      "residentBytes": 735559680
+    },
+    "recovered_response_exact": true
+  },
+  "response_exact_to_official": true,
+  "network_denied_per_process": true,
+  "raw_receipt_sha256": "1124a2fee7cf4c5daace358e1a6c621b4905a1f67f6deffedef2bf5f4ad9feda",
+  "hardware": "physical M4 Pro 24 GiB, macOS 27.0.1; Release Swift/MLX GPU",
+  "command": "Release CLI validate-resource-lifecycle BUNDLE NIFTI chest PRIVATE_QA_REQUEST PRIVATE_OUTPUT under deny network",
+  "limitations": [
+    "Three real CT-session residencies and a host-owned arithmetic kernel; a second neural architecture/TotalSegmentator was not exercised",
+    "Host pressure API invoked during observed in-flight decode; no disruptive OS memory exhaustion induced",
+    "Resource estimate is not a general RAM requirement or OS-enforced cap; integrated viewer residency remains #46",
+    "No clinical/mobile qualification"
+  ]
+}

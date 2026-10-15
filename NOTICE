@@ -1,0 +1,20 @@
+NV-Reason-CT Swift — independent, unofficial port.
+Copyright 2026 Thales Matheus Mendonca Santos.
+
+New code is licensed under Apache-2.0 unless otherwise marked.
+NV-Reason-CT model architecture, parameters and supplied software are by
+NVIDIA CORPORATION & AFFILIATES, under OpenMDW-1.1. Their notices must accompany
+derived materials and converted bundles. See LICENSES/NVIDIA-OpenMDW-1.1.txt.
+
+MLX Swift LM: Copyright (c) 2024 ml-explore, MIT.
+NV-Reason-CT web: Copyright (c) 2026 jarrelscy, MIT; secondary behavioral reference.
+TotalSegmentator: Jakob Wasserthal and contributors, Apache-2.0; reference only.
+NIfTIReader conventions are adapted from the evolved TotalSegmentator-Swift
+reader at ac144cd; modified for Float32 XYZ HU, immutable geometry and bounded
+input. Its original NOTICE is retained in LICENSES. Web remains reference only.
+Offline scientific dependencies are not part of the installed Swift runtime.
+Spatial-processing equations follow MONAI Consortium's Apache-2.0 implementation
+in MONAI 1.6.1 (Spacing, compute_shape_offset, normalized affine/grid conventions).
+Anatomy crop thresholds and behavior are adapted from NVIDIA's pinned processor
+under OpenMDW-1.1; its notices and license apply to the derived implementation.
+See docs/LICENSE_INVENTORY.md for component scope and publication obligations.
