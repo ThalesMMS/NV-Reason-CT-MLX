@@ -2,6 +2,316 @@
   "schema_version": 1,
   "models": [
     {
+      "id": "nv-reason-ct-mobile-4bit-v1",
+      "bundle_id": "ced267d7a758e72fa3d035b21ecb3cb39d9e545f53b335cee15ada838d61a70e",
+      "manifest_sha256": "65053d9a4e34b6bac15423a32e1e11bbc89cca178b3676c5d2cf4b098aa4f7e6",
+      "profile_id": "nv-reason-ct-affine4-g64-bf16-mobile-v1",
+      "available": true,
+      "engineering_qualified": true,
+      "clinical_validation": false,
+      "publication": "verified-release",
+      "tag": "ct-mobile-4bit-v0.1.0",
+      "minimum_runtime": "0.1.0",
+      "precision": {
+        "weights": "AFFINE4/BF16",
+        "activations": "BF16",
+        "norm_and_recurrence": "FP32",
+        "profile": "affine4-g64-bf16-mobile-v1"
+      },
+      "source_revision": "386b93e034983f6c1fc841a43833a1b6a0cd9c13",
+      "sdk_revision": "54ef70550cfe9a25f91b404912ecf6f9e5002d28",
+      "qualification_sha256": "bbd492d0f52dc0f171d0820119898cb409875d388be2c58d2cef899ed3379b9d",
+      "files": [
+        {
+          "path": "NOTICES.txt",
+          "bytes": 1548,
+          "sha256": "97d54a5d34b0e6cbe455adca513b7c004510004128dc4656379b8ccf21ec2f3f",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/NOTICES.txt",
+          "asset": "NOTICES.txt"
+        },
+        {
+          "path": "chat_template.jinja",
+          "bytes": 7756,
+          "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/chat_template.jinja",
+          "asset": "chat_template.jinja"
+        },
+        {
+          "path": "config.json",
+          "bytes": 3106,
+          "sha256": "c03e6071e42cc9f243c3f9bf66c5af9f749ee66c1ff9aa11fa6b5ed33045fe2d",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/config.json",
+          "asset": "config.json"
+        },
+        {
+          "path": "conversion.json",
+          "bytes": 285274,
+          "sha256": "cf6a14d50056097ff7083e970d50f42c30cae4f51df2b439e88a670b94b71426",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/conversion.json",
+          "asset": "conversion.json"
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 163,
+          "sha256": "6a391fdcafb170d69b8c5f7f2b131f8210c2fd7f6fa241862f664166bdc32d92",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/generation_config.json",
+          "asset": "generation_config.json"
+        },
+        {
+          "path": "image_processor_3d/preprocessor_config.json",
+          "bytes": 238,
+          "sha256": "1f5b118fa7b05e49a37e9fcb49ffbd26b5762fa357cc0c2ca4b3e1cb061830b2",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/image_processor_3d--preprocessor_config.json",
+          "asset": "image_processor_3d--preprocessor_config.json"
+        },
+        {
+          "path": "licenses/Apache-2.0.txt",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/licenses--Apache-2.0.txt",
+          "asset": "licenses--Apache-2.0.txt"
+        },
+        {
+          "path": "licenses/NVIDIA-OpenMDW-1.1.txt",
+          "bytes": 2693,
+          "sha256": "d7c8a9e5d1896d0a9588319cc7b1433e64645ad6d9e55632c30b78d8c038c23b",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/licenses--NVIDIA-OpenMDW-1.1.txt",
+          "asset": "licenses--NVIDIA-OpenMDW-1.1.txt"
+        },
+        {
+          "path": "licenses/mlx-swift-MIT.txt",
+          "bytes": 1067,
+          "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/licenses--mlx-swift-MIT.txt",
+          "asset": "licenses--mlx-swift-MIT.txt"
+        },
+        {
+          "path": "licenses/mlx-swift-lm-MIT.txt",
+          "bytes": 1067,
+          "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/licenses--mlx-swift-lm-MIT.txt",
+          "asset": "licenses--mlx-swift-lm-MIT.txt"
+        },
+        {
+          "path": "manifest.json",
+          "bytes": 7068,
+          "sha256": "65053d9a4e34b6bac15423a32e1e11bbc89cca178b3676c5d2cf4b098aa4f7e6",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/manifest.json",
+          "asset": "manifest.json"
+        },
+        {
+          "path": "processing.json",
+          "bytes": 649,
+          "sha256": "cf696e6f04b885526ca6e87c88a0cd2901da7a5e86d77b56e953d2701f19eaaf",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/processing.json",
+          "asset": "processing.json"
+        },
+        {
+          "path": "source-map.json",
+          "bytes": 316612,
+          "sha256": "4547c52c7d41a9f00f10c43ce90388e39ed08de414491bb0c0bdf57f9c8e6edc",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/source-map.json",
+          "asset": "source-map.json"
+        },
+        {
+          "path": "tensor-index.json",
+          "bytes": 366037,
+          "sha256": "e5788de759973ed50a91d56dcb462d45de6df27b2dcab3bef9e58ab8c4cd1228",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/tensor-index.json",
+          "asset": "tensor-index.json"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 19989325,
+          "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/tokenizer.json",
+          "asset": "tokenizer.json"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 1339,
+          "sha256": "43ad4763287aaba4486a9f0fc787ab8eacbf2bfc812084520a19a28c242b1349",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/tokenizer_config.json",
+          "asset": "tokenizer_config.json"
+        },
+        {
+          "path": "weights/mobile-000.safetensors",
+          "bytes": 317849720,
+          "sha256": "9319db90cee10311943e16b621b3dfb0ded03845aa2ef2058b418f8b9e2ddc7b",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-000.safetensors",
+          "asset": "weights--mobile-000.safetensors"
+        },
+        {
+          "path": "weights/mobile-001.safetensors",
+          "bytes": 39731432,
+          "sha256": "808ae409f31c4b44075ca2a0c3214fd573eae96e9bc2e266d882397c705f2e21",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-001.safetensors",
+          "asset": "weights--mobile-001.safetensors"
+        },
+        {
+          "path": "weights/mobile-002.safetensors",
+          "bytes": 127320592,
+          "sha256": "0787b1f68b75a9145badc4e53e36661fd59e38b50109e377e949e36fd74c6067",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-002.safetensors",
+          "asset": "weights--mobile-002.safetensors"
+        },
+        {
+          "path": "weights/mobile-003.safetensors",
+          "bytes": 124049648,
+          "sha256": "8ec8be47b37cf92fe8cd93a290eecf4e3fdc413af273f54a756e233adf8584a9",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-003.safetensors",
+          "asset": "weights--mobile-003.safetensors"
+        },
+        {
+          "path": "weights/mobile-004.safetensors",
+          "bytes": 50137360,
+          "sha256": "b11b9226570137d0862c4b5204c7823af29461e094100a971bc07c6de551d80b",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-004.safetensors",
+          "asset": "weights--mobile-004.safetensors"
+        },
+        {
+          "path": "weights/mobile-005.safetensors",
+          "bytes": 127156472,
+          "sha256": "d65e66d3867eafa8445a03f457e6a6422991111db815bdd31213a78abf165152",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-005.safetensors",
+          "asset": "weights--mobile-005.safetensors"
+        },
+        {
+          "path": "weights/mobile-006.safetensors",
+          "bytes": 124049608,
+          "sha256": "c5b43888c88fe36d928452e23ee567c544a01ee198b4c39f2e7ce1074007d259",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-006.safetensors",
+          "asset": "weights--mobile-006.safetensors"
+        },
+        {
+          "path": "weights/mobile-007.safetensors",
+          "bytes": 50306816,
+          "sha256": "0cfea998f6587f283f7ac0bc9bb792f66e85ca3b29f114bc0537e86bd206c42f",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-007.safetensors",
+          "asset": "weights--mobile-007.safetensors"
+        },
+        {
+          "path": "weights/mobile-008.safetensors",
+          "bytes": 131426632,
+          "sha256": "3bb86b111a67890f48a8666ec001ee72fe96ba8f5a0fcaf45a31a3ec1c3f9732",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-008.safetensors",
+          "asset": "weights--mobile-008.safetensors"
+        },
+        {
+          "path": "weights/mobile-009.safetensors",
+          "bytes": 133050840,
+          "sha256": "da7080306d8ce78bd4347a0365b920213e4451c88f58fa881bafe7a7475df6e4",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-009.safetensors",
+          "asset": "weights--mobile-009.safetensors"
+        },
+        {
+          "path": "weights/mobile-010.safetensors",
+          "bytes": 37035408,
+          "sha256": "fd845d19defd7e7776054b255213fadc77fe5640db60b5a22a3e4b2ff061d987",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-010.safetensors",
+          "asset": "weights--mobile-010.safetensors"
+        },
+        {
+          "path": "weights/mobile-011.safetensors",
+          "bytes": 129945808,
+          "sha256": "a7a5990d41e8cd1c22aa12983fd90c0d143dae577edb2b772093e5a2c7517240",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-011.safetensors",
+          "asset": "weights--mobile-011.safetensors"
+        },
+        {
+          "path": "weights/mobile-012.safetensors",
+          "bytes": 133794296,
+          "sha256": "baa0597c42731109857150228c3b3ab191285e1e6d55e605d37002edae9770b0",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-012.safetensors",
+          "asset": "weights--mobile-012.safetensors"
+        },
+        {
+          "path": "weights/mobile-013.safetensors",
+          "bytes": 27449688,
+          "sha256": "4bec462c61d83128a26d7b72bb1adbb11c9cd3964ad4d54a0464534331e0b36e",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-013.safetensors",
+          "asset": "weights--mobile-013.safetensors"
+        },
+        {
+          "path": "weights/mobile-014.safetensors",
+          "bytes": 124049648,
+          "sha256": "9181c85c5eb60c5d5129b3c3ef44497ba1a5994dc0836b594143977a51be3c60",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-014.safetensors",
+          "asset": "weights--mobile-014.safetensors"
+        },
+        {
+          "path": "weights/mobile-015.safetensors",
+          "bytes": 126997504,
+          "sha256": "7b1d61a40fa16614c0c7dd508832b47d63f9e357308ec4e1df40e695afa3f4da",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-015.safetensors",
+          "asset": "weights--mobile-015.safetensors"
+        },
+        {
+          "path": "weights/mobile-016.safetensors",
+          "bytes": 47194304,
+          "sha256": "a7dca0e55b754105960edc1538da89342a202b7153c3d1bd4d10c86ba5d64427",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-016.safetensors",
+          "asset": "weights--mobile-016.safetensors"
+        },
+        {
+          "path": "weights/mobile-017.safetensors",
+          "bytes": 124049616,
+          "sha256": "ddb6277395105e75ffc5509473cea88e7350ea10122f10550c5376024529a24d",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-017.safetensors",
+          "asset": "weights--mobile-017.safetensors"
+        },
+        {
+          "path": "weights/mobile-018.safetensors",
+          "bytes": 127151560,
+          "sha256": "c9cc5349f6aea1ddd962ca08dae35c0c3724b498114d919f11751cde045dfd7f",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-018.safetensors",
+          "asset": "weights--mobile-018.safetensors"
+        },
+        {
+          "path": "weights/mobile-019.safetensors",
+          "bytes": 50306792,
+          "sha256": "4e4516fe0be5f57acf04809849b4606690a401eb13c860d764f41ef7659cef36",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-019.safetensors",
+          "asset": "weights--mobile-019.safetensors"
+        },
+        {
+          "path": "weights/mobile-020.safetensors",
+          "bytes": 124049560,
+          "sha256": "ed8930984e790ad71d51399f6a60452a60432c50f01b2e9da27c07dd63d63ea5",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-020.safetensors",
+          "asset": "weights--mobile-020.safetensors"
+        },
+        {
+          "path": "weights/mobile-021.safetensors",
+          "bytes": 90131488,
+          "sha256": "82be9aa24fd4a451fa90797c556aa1a8bb2d24515ed8b13080bc36be7f0821d8",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-021.safetensors",
+          "asset": "weights--mobile-021.safetensors"
+        },
+        {
+          "path": "weights/mobile-022.safetensors",
+          "bytes": 134017504,
+          "sha256": "c13d4af48dd654848e5e6de984e32bbcb03d7a27c6a05ca264514195d8a163b4",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-022.safetensors",
+          "asset": "weights--mobile-022.safetensors"
+        },
+        {
+          "path": "weights/mobile-023.safetensors",
+          "bytes": 134182088,
+          "sha256": "4c6d081bcfd475d4b0911b8f6cf035f5482b2037f605558e0b9c344ec9f60fb9",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-023.safetensors",
+          "asset": "weights--mobile-023.safetensors"
+        },
+        {
+          "path": "weights/mobile-024.safetensors",
+          "bytes": 25944768,
+          "sha256": "cbcc9c62077bd4e86130dc95856c36d527ec0afacdee2909195e137052086212",
+          "url": "https://github.com/ThalesMMS/NV-Reason-CT-MLX/releases/download/ct-mobile-4bit-v0.1.0/weights--mobile-024.safetensors",
+          "asset": "weights--mobile-024.safetensors"
+        }
+      ]
+    },
+    {
       "id": "nv-reason-ct-fp32-v1",
       "bundle_id": "f161b426996994d6a1c224976afe7b89866c678eb36da7fd96730f48d3bb6eac",
       "manifest_sha256": "546d892cbe9912fdf556ede5051dd15d246e42981fa6d66ce03c7fbf495de842",

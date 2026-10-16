@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "scope": "experimental-mobile-execution-not-numerical-or-clinical-equivalence",
+  "date": "2026-10-16",
+  "profile": "affine4-g64-bf16-mobile-v1",
+  "source_sdk_parent_revision": "8db7d35",
+  "model_bundle_id": "ced267d7a758e72fa3d035b21ecb3cb39d9e545f53b335cee15ada838d61a70e",
+  "manifest_sha256": "65053d9a4e34b6bac15423a32e1e11bbc89cca178b3676c5d2cf4b098aa4f7e6",
+  "measured_bundle_id_before_metadata_clarification": "26addd7c556262b97533a53935d1af6f6250f887ab05b89a1a0dfb51f607f756",
+  "metadata_only_changes": [
+    "conversion.json",
+    "NOTICES.txt"
+  ],
+  "weight_files_unchanged": true,
+  "quantized_language_matrices": 249,
+  "parameter_storage_bytes": 2661217088,
+  "visual_tokens": 13824,
+  "crop": [
+    192,
+    192,
+    192
+  ],
+  "prefill_chunk": 128,
+  "hardware": {
+    "device": "iPad Pro 13-inch (M4)",
+    "marketed_ram_gb": 8,
+    "reported_physical_memory_bytes": 7732772864,
+    "os": "iPadOS 27.0.1",
+    "configuration": "Release",
+    "increased_memory_limit_entitlement": true
+  },
+  "cases": [
+    {
+      "case_id": "public-01-chest",
+      "termination": "endOfSequence",
+      "generated_tokens": 793,
+      "maximum_new_tokens": 1024,
+      "response_utf8_bytes": 3405,
+      "elapsed_seconds": 132.089852291625,
+      "phase_work_seconds": {
+        "encoding": 10.11895404162351,
+        "generating": 50.697305915586185,
+        "loading": 4.302714749996085,
+        "prefilling": 62.53673083346803,
+        "preparing": 0.30026349995750934
+      },
+      "process_kernel_peak_bytes": 3757690240,
+      "process_sampled_peak_bytes": 3757526400,
+      "mlx_peak_bytes": 3457797984,
+      "mlx_active_bytes_after_unload": 0
+    },
+    {
+      "case_id": "public-01-abdomen",
+      "termination": "endOfSequence",
+      "generated_tokens": 299,
+      "maximum_new_tokens": 1024,
+      "response_utf8_bytes": 1121,
+      "elapsed_seconds": 103.10672558331862,
+      "phase_work_seconds": {
+        "encoding": 8.479374333343003,
+        "generating": 18.95724479208002,
+        "loading": 2.8883370833355,
+        "prefilling": 68.60464270837838,
+        "preparing": 0.24455737497191876
+      },
+      "process_kernel_peak_bytes": 4413279712,
+      "process_sampled_peak_bytes": 4127182304,
+      "mlx_peak_bytes": 3457805792,
+      "mlx_active_bytes_after_unload": 0
+    }
+  ],
+  "metal_prefix_comparison": {
+    "device": "M4 Pro 24 GiB Mac",
+    "maximum_new_tokens": 32,
+    "before_seconds": 77.27,
+    "after_seconds": 45.6,
+    "same_utf8_output": true,
+    "controlled_thermals": false,
+    "scope": "one cold process each; point measurement, not a sustained benchmark"
+  },
+  "limits": [
+    "One public CT, two crop modes; no diagnostic accuracy validation.",
+    "No physical 12 GB device was measured.",
+    "Physical measurements used the standalone native probe; viewer residency is admitted separately.",
+    "The original FP32 and rejected selective-MLP equivalence receipts are unchanged.",
+    "Mac process peaks were approximately 5 GiB; iPad measurements are not universal peak guarantees."
+  ]
+}

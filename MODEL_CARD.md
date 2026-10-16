@@ -18,3 +18,11 @@ Weights use NVIDIA OpenMDW-1.1. Bundled component notices include Apache-2.0 and
 see LICENSE, NOTICE and licenses/. No exams, embeddings, prompts or generated reports
 are distributed here. This repository contains metadata/notices only; all tools live
 in the Swift source repository and all weights live in versioned release assets.
+
+
+## Separate experimental mobile profile
+
+The `ct-mobile-4bit-v0.1.0` release deliberately accepts numerical changes for
+8–12 GB devices. It is not the BF16-storage/FP32-compute baseline described above.
+See README and provenance/mobile-experimental-v1.json for 8 GB iPad execution
+measurements and limits. No clinical validation or FP32 equivalence is claimed.
